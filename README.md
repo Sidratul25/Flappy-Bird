@@ -1,7 +1,7 @@
 # Flappy Bird
 Flappy Bird is a 2D game created using C++ and SDL2 library.
 
-YouTube link: https://www.youtube.com/watch?v=cEnws41SWxU
+YouTube link:
 
 To run the game:
 1) run anywhere:
