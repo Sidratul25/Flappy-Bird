@@ -1,5 +1,5 @@
-# Save-The-Ratto
-Save The Ratto is a 2D game created using C++ and SDL2 library.
+# Flappy Bird
+Flappy Bird is a 2D game created using C++ and SDL2 library.
 
 YouTube link: https://www.youtube.com/watch?v=cEnws41SWxU
 
