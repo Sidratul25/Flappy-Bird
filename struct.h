@@ -14,6 +14,7 @@ using namespace std;
 struct A{
 Mix_Music *gMusic = NULL;
 Mix_Chunk *gScratch = NULL;
+Mix_Chunk *gScratch1 = NULL;
 } Music;
 
 struct B{
