@@ -177,10 +177,10 @@ int play()
 
         if (life < 0)
         {
+            Mix_HaltMusic();
             loadscoreboard();
             quit = true;
-            x = 5;
-            Mix_HaltMusic();
+            x = 5;          
             break;
         }
         //Scroll background
