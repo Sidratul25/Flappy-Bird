@@ -294,7 +294,7 @@ int loadhighscore()
 
 int loadinstructions(){
 
-    SDL_Surface *image = SDL_LoadBMP("Images/Ins.bmp");
+    SDL_Surface *image = SDL_LoadBMP("Images/Ins1.bmp");
 	SDL_Texture *texture = SDL_CreateTextureFromSurface(app.gRenderer, image);
 	
 	while (1)
