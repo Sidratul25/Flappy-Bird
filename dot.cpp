@@ -3,7 +3,6 @@
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_ttf.h>
 #include "defs.h"
-
 #include "texture.h"
 #include <bits/stdc++.h>
 using namespace std;
@@ -170,7 +169,7 @@ void Dot::move(SDL_Rect &wall)
 			rect.gfoodyClips[0].w = 0;
 			rect.gfoodyClips[0].h = 0;
 			score += 500;
-            Mix_PlayChannel(-1, Music.gScratch, 0);
+                        Mix_PlayChannel(-1, Music.gScratch, 0);
 		}
 	}
 	else if (r == 6)
@@ -180,6 +179,7 @@ void Dot::move(SDL_Rect &wall)
 			rect.gSpriteClips[0].w = 0;
 			rect.gSpriteClips[0].h = 0;
 			checklife++;
+			Mix_PlayChannel(-1, Music.gScratch1, 0);
 		}
 	}
 	r++;
