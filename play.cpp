@@ -178,6 +178,7 @@ int play()
         if (life < 0)
         {
             Mix_HaltMusic();
+            Mix_PlayMusic(Music.gMusic1,1);  
             loadscoreboard();
             quit = true;
             x = 5;          
