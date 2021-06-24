@@ -225,7 +225,12 @@ bool loadMedia()
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
-	
+	Music.gScratch2 = Mix_LoadWAV("Images/over.wav");
+	if (Music.gScratch2 == NULL)
+	{
+		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
+		success = false;
+	}
 
     Music.gMusic = Mix_LoadMUS("Images/music1.mp3");
 	if (Music.gMusic == NULL)
