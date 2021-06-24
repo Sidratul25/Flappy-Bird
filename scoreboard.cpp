@@ -12,6 +12,7 @@ using namespace std;
 void loadscoreboard()
 {
 	SDL_Delay(1000);
+	Mix_PlayChannel(-1, Music.gScratch2, 0);
 	SDL_Surface *image = SDL_LoadBMP("Images/now.bmp");
 	SDL_Texture *texture = SDL_CreateTextureFromSurface(app.gRenderer, image);
 	SDL_RenderCopy(app.gRenderer, texture, NULL, NULL);
