@@ -13,6 +13,7 @@ using namespace std;
 //The music that will be played
 struct A{
 Mix_Music *gMusic = NULL;
+Mix_Music *gMusic1 = NULL;
 Mix_Chunk *gScratch = NULL;
 Mix_Chunk *gScratch1 = NULL;
 Mix_Chunk *gScratch2 = NULL;
