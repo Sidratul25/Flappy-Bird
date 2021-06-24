@@ -15,6 +15,7 @@ struct A{
 Mix_Music *gMusic = NULL;
 Mix_Chunk *gScratch = NULL;
 Mix_Chunk *gScratch1 = NULL;
+Mix_Chunk *gScratch2 = NULL;
 } Music;
 
 struct B{
