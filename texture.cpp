@@ -162,12 +162,12 @@ bool loadMedia()
 		success = false;
 	}
 	if( !tex.gBirdySheetTexture.loadFromFile("Images/birdy2.png" ) )
-    {
+        {
         printf( "Failed to load walking animation texture!\n" );
         success = false;
-    }
-    else
-    {
+        }
+       else
+       {
         //Set Birdy clips
         rect.gBirdyClips[ 0 ].x =   0;
         rect.gBirdyClips[ 0 ].y =   0;
@@ -178,7 +178,7 @@ bool loadMedia()
         rect.gBirdyClips[ 1 ].y =   0;
         rect.gBirdyClips[ 1 ].w =  140;
         rect.gBirdyClips[ 1 ].h = 89;
-    }
+        }
     
 
 	//Load sprite sheet texture
@@ -225,6 +225,7 @@ bool loadMedia()
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
+	
 	Music.gScratch2 = Mix_LoadWAV("Images/over.wav");
 	if (Music.gScratch2 == NULL)
 	{
@@ -232,8 +233,15 @@ bool loadMedia()
 		success = false;
 	}
 
-    Music.gMusic = Mix_LoadMUS("Images/music1.mp3");
+        Music.gMusic = Mix_LoadMUS("Images/music1.mp3");
 	if (Music.gMusic == NULL)
+	{
+		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
+		success = false;
+	}
+	
+	Music.gMusic1 = Mix_LoadMUS("Images/hit.mp3");
+	if (Music.gMusic1 == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
