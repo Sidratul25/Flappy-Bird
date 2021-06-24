@@ -87,6 +87,8 @@ void close()
 
 	Mix_FreeChunk(Music.gScratch);
 	Music.gScratch = NULL;
+	Mix_FreeChunk(Music.gScratch1);
+	Music.gScratch1 = NULL;
 	Mix_FreeMusic(Music.gMusic);
 	Music.gMusic = NULL;
 
