@@ -89,8 +89,12 @@ void close()
 	Music.gScratch = NULL;
 	Mix_FreeChunk(Music.gScratch1);
 	Music.gScratch1 = NULL;
+	Mix_FreeChunk(Music.gScratch2);
+	Music.gScratch2 = NULL;
 	Mix_FreeMusic(Music.gMusic);
 	Music.gMusic = NULL;
+	Mix_FreeMusic(Music.gMusic1);
+	Music.gMusic1 = NULL;
 
 	//Free global font
 	TTF_CloseFont(app.gFont);
