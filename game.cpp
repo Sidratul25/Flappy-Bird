@@ -30,11 +30,11 @@ int main(int argc, char *args[])
 		{
 			printf("Failed to load media!\n");
 		}
-        else
+                 else
 		{
 		    if(x==-1)
-            //The current input text.
-            //Set text color as black
+                         //The current input text.
+                         //Set text color as black
 			SDL_Color textColor  = { 0, 0, 0, 0xFF };
             
 
@@ -43,8 +43,8 @@ int main(int argc, char *args[])
 			while (x)
 			{
             
-                //The rerender text flag
-				bool renderText = false;
+                            //The rerender text flag
+		            bool renderText = false;
 
 			    SDL_Event m;
 			    kol=0;
@@ -53,14 +53,13 @@ int main(int argc, char *args[])
 				if (x == 1 && kol==1)
 				{
 				   x = username();	
-				   x = 9;
-				  // x = play();				
-                   //x= loadmenu();
-                }
+				   x = 9;							                  
+                                }
+				
 				if(x == 9 && kol==1)
 				{
 					x = play();				
-                    x= loadmenu();
+                                        x= loadmenu();
 				}
 
 				if (x == 2)
