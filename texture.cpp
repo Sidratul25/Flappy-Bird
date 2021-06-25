@@ -212,35 +212,35 @@ bool loadMedia()
 		rect.gfoodyClips[0].h = 35;
 	}
 
-	Music.gScratch = Mix_LoadWAV("Images/sound.wav");
+	Music.gScratch = Mix_LoadWAV("Music/sound.wav");
 	if (Music.gScratch == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 	
-	Music.gScratch1 = Mix_LoadWAV("Images/sound2.wav");
+	Music.gScratch1 = Mix_LoadWAV("Music/sound2.wav");
 	if (Music.gScratch1 == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 	
-	Music.gScratch2 = Mix_LoadWAV("Images/over.wav");
+	Music.gScratch2 = Mix_LoadWAV("Music/over.wav");
 	if (Music.gScratch2 == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-        Music.gMusic = Mix_LoadMUS("Images/music1.mp3");
+        Music.gMusic = Mix_LoadMUS("Music/music1.mp3");
 	if (Music.gMusic == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 	
-	Music.gMusic1 = Mix_LoadMUS("Images/hit.mp3");
+	Music.gMusic1 = Mix_LoadMUS("Music/hit.mp3");
 	if (Music.gMusic1 == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
