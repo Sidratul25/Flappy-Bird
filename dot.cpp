@@ -76,7 +76,16 @@ void Dot::handleEvent(SDL_Event &e)
 	if (e.type == SDL_QUIT)
 	{
 		quit = true;
+	}	
+	if(e.type == SDLK_0)
+	{
+		Mix_HaltMusic();
 	}
+	if(e.type == SDLK_1)
+	{
+		Mix_PlayMusic(Music.gMusic,1);
+	}
+	
 	//If a key was pressed
 	if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
 	{
@@ -95,6 +104,12 @@ void Dot::handleEvent(SDL_Event &e)
             case SDLK_RIGHT:
                 mVelX += DOT_VEL;
                 break;
+	    case SDLK_0:
+	        Mix_HaltMusic();
+	        break;
+	    case SDLK_1:
+	        Mix_PlayMusic(Music.gMusic,1);
+	        break;
 		}
 	}
 	//If a key was released
