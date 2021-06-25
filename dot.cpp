@@ -183,7 +183,7 @@ void Dot::move(SDL_Rect &wall)
 		{
 			rect.gfoodyClips[0].w = 0;
 			rect.gfoodyClips[0].h = 0;
-			score += 500;
+			score += 200;
                         Mix_PlayChannel(-1, Music.gScratch, 0);
 		}
 	}
