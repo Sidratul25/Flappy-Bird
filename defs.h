@@ -20,18 +20,10 @@ const int TOTAL_BUTTONS = 4;
 
 const int parts = 1;
 const int foody = 1;
-
-int positionx, positiony;
-
 Uint64 startTime = 0;
-
 std::string inputText = "";
 bool renderText = false;
 int USERNAME = 9;
-
-long long int score;
-int life, checklife, noncollied;
-
 const int FLYING_ANIMATION_FRAMES = 2;
 int frame = 0;
 bool quit = false;
