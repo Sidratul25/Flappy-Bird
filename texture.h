@@ -13,6 +13,9 @@ using namespace std;
 int gamestate;
 int kol;
 std::stringstream timeText;
+long long int score;
+int life, checklife, noncollied;
+int positionx, positiony;
 
 class LTexture
 {
