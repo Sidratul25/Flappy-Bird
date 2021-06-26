@@ -4,7 +4,7 @@ Flappy Bird is a 2D game created using C++ and SDL2 library.
 YouTube link:https://www.youtube.com/watch?v=tj9n3z5B4Ck&t=6s
 
 To run the game:
-1) To install SDL libraries :
+1) To install SDL2 libraries :
     1) sudo apt-get install g++
     2) sudo apt-get install libsdl2-2.0
     3) sudo apt-get install libsdl2-dev
