@@ -212,7 +212,7 @@ bool loadMedia()
 		rect.gfoodyClips[0].h = 35;
 	}
 
-	Music.gScratch = Mix_LoadWAV("Images/sound.wav");
+	Music.gScratch = Mix_LoadWAV("Music/sound.wav");
 	if (Music.gScratch == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
