@@ -119,11 +119,11 @@ bool loadMedia()
 	bool success = true;
 
 	//Load Fonts
-	if(!tex.gUBGTexture.loadFromFile("Images/Username.png"))
+	/*if(!tex.gUBGTexture.loadFromFile("Images/Username.png"))
 	{
 		printf("Failer to load Username!\n");
 		success = false;
-	}
+	}*/
 	//Open the font
 	app.gFont = TTF_OpenFont("Images/Courier.ttf", 34);
 	if (app.gFont == NULL)
@@ -212,7 +212,7 @@ bool loadMedia()
 		rect.gfoodyClips[0].h = 35;
 	}
 
-	Music.gScratch = Mix_LoadWAV("Music/sound.wav");
+	Music.gScratch = Mix_LoadWAV("Images/sound.wav");
 	if (Music.gScratch == NULL)
 	{
 		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
@@ -222,14 +222,14 @@ bool loadMedia()
 	Music.gScratch1 = Mix_LoadWAV("Music/sound2.wav");
 	if (Music.gScratch1 == NULL)
 	{
-		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
+		printf("Failed to load scratch1 sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 	
 	Music.gScratch2 = Mix_LoadWAV("Music/over.wav");
 	if (Music.gScratch2 == NULL)
 	{
-		printf("Failed to load scratch sound effect! SDL_mixer Error: %s\n", Mix_GetError());
+		printf("Failed to load scratch2 sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
